@@ -17,28 +17,14 @@
 
 <table border="1">
   <tr>
-    <th>
-      Image
-    </th>
-
-    <th>
-      Caption
-    </th>
-
-    <th>
-      Owner
-    </th>
-
-    <th>
-      Posted
-    </th>
-
-    <td>
-    </td>
+    <th>Image</th>
+    <th>Caption</th>
+    <th>Owner</th>
+    <th>Posted</th>
+    <td></td>
   </tr>
 
   <% @list_of_photos.each do |a_photo| %>
-
     <tr>
       <td>
         <img src="<%= a_photo.image %>" height="300px">
@@ -49,7 +35,7 @@
       </td>
 
       <td>
-        <%= a_photo.poster.username %>
+        <%= a_photo.owner.username %>
       </td>
 
       <td>
